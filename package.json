@@ -1,0 +1,30 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "Proyecto FizzBuzz Semana 4 LaunchX",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JossPerezT/FizzBuzz.git"
+  },
+  "author": "jocelynperez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JossPerezT/FizzBuzz/issues"
+  },
+  "homepage": "https://github.com/JossPerezT/FizzBuzz#readme",
+  "devDependencies": {
+    "jest": "^28.0.3",
+    "supertest": "^6.2.3"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
