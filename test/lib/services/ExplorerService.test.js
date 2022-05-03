@@ -12,5 +12,9 @@ describe ('Tests de Explorer Service', ()=>{
         expect(filtrarPorMission[0].score).toBe(1)
         expect(filtrarPorMission[5].githubUsername).toBe("ajolonauta11")
     })
+    test('2. Conseguir cuantos explorers hay por mission', ()=>{
+        const amountExplorerNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node")
+        expect(amountExplorerNode).toBe(10)
+    })
 
 })
