@@ -99,7 +99,7 @@ describe("Tests para controlar la funcionalidad con el server", ()=>{
         );
     });
     test('3. Test para conseguir el número de explorers que hay por misión', ()=>{
-        const prueba3 = ExplorerController.getExplorersAmountByMission("java");
+        const prueba3 = ExplorerController.getExplorersAmountByMission("node");
         expect(prueba3).toEqual(10);
     });
 });
