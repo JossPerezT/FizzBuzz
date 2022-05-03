@@ -16,7 +16,7 @@ describe ('Tests de Explorer Service', ()=>{
         const amountExplorerNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node")
         expect(amountExplorerNode).toBe(10)
         const amountExplorerJava = ExplorerService.getAmountOfExplorersByMission(explorers, "java")
-        expect (amountExplorerJava).toBe(10)
+        expect (amountExplorerJava).toBe(5)
     })
 
 })
