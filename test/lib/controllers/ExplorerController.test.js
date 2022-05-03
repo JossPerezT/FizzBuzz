@@ -82,7 +82,7 @@ describe("Tests para controlar la funcionalidad con el server", ()=>{
         );
     });
     test ('2. test para conseguir los Usernames por misión', ()=>{
-        const prueba2 = ExplorerController.getExplorersUsernamesByMission("node");
+        const prueba2 = ExplorerController.getExplorersUsernamesByMission("java");
         expect(prueba2).toMatchObject(
             [
                 'ajolonauta1',
@@ -97,6 +97,6 @@ describe("Tests para controlar la funcionalidad con el server", ()=>{
                 'ajolonauta15'
             ]
         );
-        
+
     });
 });
