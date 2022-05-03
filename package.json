@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/JossPerezT/FizzBuzz#readme",
   "devDependencies": {
-    "jest": "^28.0.3",
+    "jest": "^26.0.0",
     "supertest": "^6.2.3"
   },
   "dependencies": {
