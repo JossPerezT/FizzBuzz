@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "node ./node_modules/.bin/jest",
-    "start": "node index.js"
+    "start": "node index.js",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
   },
   "homepage": "https://github.com/JossPerezT/FizzBuzz#readme",
   "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-google": "^0.14.0",
     "jest": "^26.0.0",
     "supertest": "^6.2.3"
   },
