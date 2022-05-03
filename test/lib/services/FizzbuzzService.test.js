@@ -17,7 +17,7 @@ describe ('Tests de FizzBuzz', ()=>{
         expect (explorer1).toMatchObject({name: "Explorer1", score: 1, trick: 1})
     })
     test('4. Validacion de FizzBuzz', ()=>{
-        const explorer15 = {name: "Explorer15", score: 15}
+        const explorer15 = {name: "Explorer15", score: 14}
         FizzbuzzService.applyValidationInExplorer(explorer15)
         expect(explorer15).toMatchObject({name: "Explorer15", score: 15, trick: "FizzBuzz"})
     })
