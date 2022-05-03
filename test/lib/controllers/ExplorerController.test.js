@@ -81,4 +81,22 @@ describe("Tests para controlar la funcionalidad con el server", ()=>{
             ]
         );
     });
+    test ('2. test para conseguir los Usernames por misión', ()=>{
+        const prueba2 = ExplorerController.getExplorersUsernamesByMission("node");
+        expect(prueba2).toMatchObject(
+            [
+                'ajolonauta1',
+                'ajolonauta2',
+                'ajolonauta3',
+                'ajolonauta4',
+                'ajolonauta5',
+                'ajolonauta11',
+                'ajolonauta12',
+                'ajolonauta13',
+                'ajolonauta14',
+                'ajolonauta15'
+            ]
+        );
+        
+    });
 });
