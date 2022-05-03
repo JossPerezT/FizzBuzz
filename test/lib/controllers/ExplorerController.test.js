@@ -5,7 +5,7 @@ const ExplorerController = require('../../../lib/controllers/ExplorerController'
 
 describe("Tests para controlar la funcionalidad con el server", ()=>{
     test("1. Probando ExplorerController: GetExplorerByMission", ()=>{
-        const prueba1 = ExplorerController.getExplorersByMsission("node");
+        const prueba1 = ExplorerController.getExplorersByMsission("java");
         expect(prueba1).toMatchObject(
             [
                 {
