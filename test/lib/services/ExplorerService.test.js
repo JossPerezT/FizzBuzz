@@ -91,6 +91,8 @@ describe ('Tests de Explorer Service', ()=>{
         const amountExplorerJava = ExplorerService.getAmountOfExplorersByMission(explorers, "java")
         expect (amountExplorerJava).toBe(5)
     })
-
-
+    test('3. Conseguir los nombres de los explores por mission', ()=>{
+        const nombresPorMissionNode = ExplorerService.getExplorerUsernamesByMission(explorers, "node")
+        expect(nombresPorMissionNode).toMatchObject(['ajolonauta1', 'ajolonauta2', 'ajolonauta3', 'ajolonauta4', 'ajolonauta5', 'ajolonauta11', 'ajolonauta12', 'ajolonauta13', 'ajolonauta14', 'ajolonauta15'])
+    })
 })
