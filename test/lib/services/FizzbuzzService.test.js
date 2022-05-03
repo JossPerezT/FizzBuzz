@@ -9,7 +9,7 @@ describe ('Tests de FizzBuzz', ()=>{
     test ('2. Validación de Buzz', ()=>{
         const explorer5 = {name: "Explorer5", score: 5}
         FizzbuzzService.applyValidationInExplorer(explorer5)
-        expect(explorer5).toMatchObject({name: "Explorer5", score: 5, trick: "Buzz"})
+        expect(explorer5).toMatchObject({name: "Explorer5", score: 5, trick: "BUZZ"})
     })
 })
 
