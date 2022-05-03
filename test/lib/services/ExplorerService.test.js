@@ -15,6 +15,8 @@ describe ('Tests de Explorer Service', ()=>{
     test('2. Conseguir cuantos explorers hay por mission', ()=>{
         const amountExplorerNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node")
         expect(amountExplorerNode).toBe(10)
+        const amountExplorerJava = ExplorerService.getAmountOfExplorersByMission(explorers, "java")
+        expect (amountExplorerJava).toBe(10)
     })
 
 })
