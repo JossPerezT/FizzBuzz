@@ -12,20 +12,14 @@ describe ('Tests de FizzBuzz', ()=>{
         expect(explorer5).toMatchObject({name: "Explorer5", score: 5, trick: "Buzz"})
     })
     test ('3. Valiación de trick', ()=>{
-        const explorer1 = {name: "Explorer1", score: 2}
+        const explorer1 = {name: "Explorer1", score: 1}
         FizzbuzzService.applyValidationInExplorer(explorer1)
         expect (explorer1).toMatchObject({name: "Explorer1", score: 1, trick: 1})
     })
+    test('4. Validación de FizzBuzz', ()=>{
+        const explorer15 = {name: "Explorer15", score: 15}
+        FizzbuzzService.applyValidationInExplorer(explorer15)
+        expect(explorer15).toMatchObject({name: "Explorer15", score: 15, trick: "FizzBuzz"})
+    })
 })
-
-
-
-/*
-
-test('4. Validación de FizzBuzz', ()=>{
-    const explorer15 = {name: "Explorer15", score: 15}
-    FizzbuzzService.applyValidationInExplorer(explorer15)
-    expect(explorer15).toMatchObject({name: "Explorer15", score: 15, trick: "FizzBuzz"})
-})
-*/
 
