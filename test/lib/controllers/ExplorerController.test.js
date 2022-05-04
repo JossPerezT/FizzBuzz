@@ -194,7 +194,7 @@ describe("Tests para controlar la funcionalidad con el server", ()=>{
         expect(prueba5).toMatchObject(   
             [
                 {
-                    name: 'Woopa1',
+                    name: 'Woopa2',
                     githubUsername: 'ajolonauta1',
                     score: 1,
                     mission: 'node',
