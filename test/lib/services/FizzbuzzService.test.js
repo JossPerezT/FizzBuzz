@@ -22,19 +22,19 @@ describe ("Tests de FizzBuzz", ()=>{
         expect(explorer15).toMatchObject({name: "Explorer15", score: 15, trick: "FizzBuzz"});
     });
     test("5. Validación de Fizzbuzz con número", ()=>{
-        const prueba5 = FizzbuzzService.applyValidationInNumber(5);
+        const prueba5 = FizzbuzzService.applyValidationInNumber(15);
         expect(prueba5).toBe("FizzBuzz");
     });
     test("6. Validación de Fizz con número", ()=>{
-        const prueba6 = FizzbuzzService.applyValidationInNumber(5);
+        const prueba6 = FizzbuzzService.applyValidationInNumber(3);
         expect(prueba6).toBe("Fizz");
     });
     test("7. Validación de Buzz con número", ()=>{
-        const prueba7 = FizzbuzzService.applyValidationInNumber(3);
+        const prueba7 = FizzbuzzService.applyValidationInNumber(5);
         expect(prueba7).toBe("Buzz");
     });
     test("8. Validación de número", ()=>{
-        const prueba8 = FizzbuzzService.applyValidationInNumber(6);
+        const prueba8 = FizzbuzzService.applyValidationInNumber(4);
         expect(prueba8).toBe(4);
     });
 });
