@@ -103,7 +103,7 @@ describe("Tests para controlar la funcionalidad con el server", ()=>{
         expect(prueba3).toEqual(10);
     });
     test('4. Test para validar FizzBuzz en ExplorerController', ()=>{
-        const prueba4 = ExplorerController.getApplyValidation("node");
+        const prueba4 = ExplorerController.getApplyValidation("java");
         expect(prueba4).toMatchObject(
             [
                 {
