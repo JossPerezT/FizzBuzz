@@ -316,4 +316,8 @@ describe("Tests para controlar la funcionalidad con el server", ()=>{
             ]
         );
     });
+    test("6. Probando el nuevo método applyValidationInNumber", ()=> {
+        const prueba6 = ExplorerController.getApplyValidationInNumber(3);
+        expect(prueba6).toBe("Fizz");
+    });
 });
