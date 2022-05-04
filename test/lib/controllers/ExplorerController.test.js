@@ -102,7 +102,7 @@ describe("Tests para controlar la funcionalidad con el server", ()=>{
         const prueba3 = ExplorerController.getExplorersAmountByMission("node");
         expect(prueba3).toEqual(10);
     });
-    test('4. Test para validar FizzBuzz en ExplorerController', ()=>{
+    test('4. Test para validar FizzBuzz en los explorers por misión ExplorerController', ()=>{
         const prueba4 = ExplorerController.getApplyValidation("node");
         expect(prueba4).toMatchObject(
             [
