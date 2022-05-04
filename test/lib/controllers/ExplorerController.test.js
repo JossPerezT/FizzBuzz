@@ -102,4 +102,91 @@ describe("Tests para controlar la funcionalidad con el server", ()=>{
         const prueba3 = ExplorerController.getExplorersAmountByMission("node");
         expect(prueba3).toEqual(10);
     });
+    test('4. Test para validar FizzBuzz en ExplorerController', ()=>{
+        const prueba4 = ExplorerController.getApplyValidation("node");
+        expect(prueba4).toMatchObject(
+            [
+                {
+                    name: 'Woopa1',
+                    githubUsername: 'ajolonauta1',
+                    score: 1,
+                    mission: 'node',
+                    stacks: [ 'javascript', 'reasonML', 'elm' ],
+                    trick: 1
+                },
+                {
+                    name: 'Woopa2',
+                    githubUsername: 'ajolonauta2',
+                    score: 2,
+                    mission: 'node',
+                    stacks: [ 'javascript', 'groovy', 'elm' ],
+                    trick: 2
+                },
+                {
+                    name: 'Woopa3',
+                    githubUsername: 'ajolonauta3',
+                    score: 3,
+                    mission: 'node',
+                    stacks: [ 'elixir', 'groovy', 'reasonML' ],
+                    trick: 'Fizz'
+                },
+                {
+                    name: 'Woopa4',
+                    githubUsername: 'ajolonauta4',
+                    mission: 'node',
+                    score: 4,
+                    stacks: [ 'javascript' ],
+                    trick: 4
+                },
+                {
+                    name: 'Woopa5',
+                    githubUsername: 'ajolonauta5',
+                    score: 5,
+                    mission: 'node',
+                    stacks: [ 'javascript', 'elixir', 'elm' ],
+                    trick: 'Buzz'
+                },
+                {
+                    name: 'Woopa11',
+                    githubUsername: 'ajolonauta11',
+                    score: 11,
+                    mission: 'node',
+                    stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
+                    trick: 11
+                },
+                {
+                    name: 'Woopa12',
+                    githubUsername: 'ajolonauta12',
+                    score: 12,
+                    mission: 'node',
+                    stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
+                    trick: 'Fizz'
+                },
+                {
+                    name: 'Woopa13',
+                    githubUsername: 'ajolonauta13',
+                    score: 13,
+                    mission: 'node',
+                    stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
+                    trick: 13
+                },
+                {
+                    name: 'Woopa14',
+                    githubUsername: 'ajolonauta14',
+                    score: 14,
+                    mission: 'node',
+                    stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
+                    trick: 14
+                },
+                {
+                    name: 'Woopa15',
+                    githubUsername: 'ajolonauta15',
+                    score: 15,
+                    mission: 'node',
+                    stacks: [ 'javascript', 'elixir', 'groovy', 'reasonML', 'elm' ],
+                    trick: 'FizzBuzz'
+                }
+            ]
+        );
+    });
 });
