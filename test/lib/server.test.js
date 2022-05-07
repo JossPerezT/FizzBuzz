@@ -1,5 +1,5 @@
 const supertest = require("supertest");
-const app = require("../../lib/server");
+const {app, server} = require("../../lib/server");
 
 
 const api = supertest(app);
@@ -136,10 +136,16 @@ test ("10. Conseguir la validación de los explorers por misión Java", async ()
     );
 });
 
-test("11. Conseguir la validación FizzBuzz con cualqueir score", async () => {
+test("11. Conseguir la validación FizzBuzz con cualqueir score", async (done) => {
     const prueba11 = await api
         .get("/v1/fizzbuzz/30")
         .expect(200)
         .expect("Content-Type", /application\/json/);
     expect(prueba11.body).toMatchObject({"score" :"30", "trick": "FizzBuzz"});
+    done();
+});
+
+afterAll( async (done) => {
+     server.close();
+    done();
 });
