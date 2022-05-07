@@ -146,6 +146,6 @@ test("11. Conseguir la validación FizzBuzz con cualqueir score", async (done) =
 });
 
 afterAll( async (done) => {
-     server.close();
+    server.close();
     done();
 });
