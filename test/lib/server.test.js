@@ -144,3 +144,7 @@ test("11. Conseguir la validación FizzBuzz con cualqueir score", async (done) =
     expect(prueba11.body).toMatchObject({"score" :"30", "trick": "FizzBuzz"});
     done();
 });
+
+afterAll(() => {
+    server.close();
+})
